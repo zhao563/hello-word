@@ -14,6 +14,7 @@ pipeline {
                     echo "=== Running ==="
                     java -cp out/ Hello
                 '''
+                archiveArtifacts artifacts: 'out/**', fingerprint: true
             }
         }
     }
